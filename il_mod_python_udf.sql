@@ -1,5 +1,5 @@
 -- grant python permission to test the udf
-grant USAGE on language python to kduponte;
+grant USAGE on language plpythonu to kduponte;
 
 -- UDF to create the full history versions of payments due for IL Mods
 create or replace function f_il_mod_full_history (original varchar(1000), most_recent varchar(1000), il_mod_date timestamp)
